@@ -1,38 +1,156 @@
-.App {
+.app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgb(16, 21, 35);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.search-bar{
+  background-color: rgb(30,42,73);
+  padding: 10px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 600px;
+  border-radius: 8px;
+  height: 30px;
+}
+.search-bar input{
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: #ffffff;
+  width: 400px;
+}
+.search-bar input::placeholder{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.search-btn{
+  background-color: rgb(1,121,255);
+  padding: 11px;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+.search-icon{
+  color: rgb(1,121,255);
+  width: fit-content;
+}
+.input-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.result-container{
+  background-color: rgb(30,42,73);
+  padding: 20px;
+  max-width: 600px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+.img-container img{
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px;
+}
+.user-info{
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.repos-info{
+  background-color: rgb(16, 21, 35);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  gap: 40px;
+  padding: 20px;
+  margin: 10px 0;
+  width: 100%;
+}
+.repos-info p{
+  color: rgb(172, 172, 172);
+  font-size: 12px;
+}
+.repos-info span{
+  color: white;
+}
+.location-links{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 300px;
+  gap: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.other-infos{
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  flex-direction:column ;
+  padding: 20px;
 }
+.row{
+  display: flex;
+  align-items: start;
+}
+.username-container h3{
+  color: white;
+}
+.bio{
+  font-size: 13px;
+  color: white;  
+}
+.username-container a{
+  color: rgb(44, 44, 252);
+}
+.username-container{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+.join-date{
+  color: #ccc;
+  width: 300px;
+}
+.not-available{
+  color: #ccc;
+  padding: 5px;
+}
+.links p{
+  color: white;
+}
+.links p
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 6px;
+}
+.links .not-available{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+   gap: 6px;
+}
+.not-available p{
+  color: #ccc;
+
+}
+
